@@ -1,0 +1,481 @@
+{
+  "id": "cb317100-9d23-4f6a-8ea6-a1714d62cdab",
+  "version": "2.0",
+  "name": "Prueba Final - AdminCES",
+  "url": "http://cestore.ces.com.uy/adminces",
+  "tests": [{
+    "id": "825fbe23-ac29-4006-bdf5-37a44dc05f69",
+    "name": "Registro de usuario tester - AdminCES",
+    "commands": [{
+      "id": "3e372a7e-6a13-46b5-84a8-beb54bc8df25",
+      "comment": "",
+      "command": "store",
+      "target": "3)ea60e0be3ba12c6ecd%7297868%5c4",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "1c3a6c58-56b6-4d19-844a-2f3ed7e3d1ff",
+      "comment": "",
+      "command": "store",
+      "target": "yaniscorrea@gmail.com",
+      "targets": [],
+      "value": "loginEmail"
+    }, {
+      "id": "b05f7cbe-c59f-4fc8-8aff-2619138678c8",
+      "comment": "",
+      "command": "store",
+      "target": "12345",
+      "targets": [],
+      "value": "loginUserPassword"
+    }, {
+      "id": "8318d114-0901-4fb1-8f3d-6e53ff48b896",
+      "comment": "",
+      "command": "store",
+      "target": "Diego",
+      "targets": [],
+      "value": "firstName"
+    }, {
+      "id": "dc9471b1-f660-4626-aa53-63b76f443c76",
+      "comment": "",
+      "command": "store",
+      "target": "de la Barrera",
+      "targets": [],
+      "value": "lastName"
+    }, {
+      "id": "8ace22c8-ebbd-4f20-ba0d-c6aaee296e9d",
+      "comment": "",
+      "command": "store",
+      "target": "diegodlba@cestester.com",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "fae3e3b7-09af-4c09-ba64-bcde5f4d7cdc",
+      "comment": "",
+      "command": "store",
+      "target": "Uruguay",
+      "targets": [],
+      "value": "country"
+    }, {
+      "id": "dc4b065e-9349-4fed-8c3d-ecafe216cd2e",
+      "comment": "",
+      "command": "store",
+      "target": "12345",
+      "targets": [],
+      "value": "createAccountPassword"
+    }, {
+      "id": "018b94fb-ef08-43e0-a429-c32f34bf609d",
+      "comment": "",
+      "command": "store",
+      "target": "Yanis Correa",
+      "targets": [],
+      "value": "usuarioLogueado"
+    }, {
+      "id": "a97762e0-227d-47c6-b7a9-6574d8a4dba6",
+      "comment": "",
+      "command": "open",
+      "target": "http://cestore.ces.com.uy/adminces/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b9bb550-574c-46a7-9f1f-297f96f7cd82",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b49b559-a751-4d50-8d8d-bbb5a4d6ff89",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [],
+      "value": "${password}"
+    }, {
+      "id": "2c4ac630-9e16-4337-8a47-f56d8dabffe4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1d1fa83-0cc4-4f42-b154-dba2da997627",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Iniciar sesión",
+      "targets": [
+        ["linkText=Iniciar sesión", "linkText"],
+        ["css=div:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='wrapper']/ul/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/adminces/login')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Iniciar sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "376e3a83-3174-4a2b-af85-b9c186d6c273",
+      "comment": "",
+      "command": "click",
+      "target": "name=inputEmail",
+      "targets": [
+        ["name=inputEmail", "name"],
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='inputEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8638828d-4d69-4656-967a-e612c1f302d1",
+      "comment": "",
+      "command": "type",
+      "target": "name=inputEmail",
+      "targets": [
+        ["name=inputEmail", "name"],
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='inputEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${loginEmail}"
+    }, {
+      "id": "236bb71b-c2fe-47d9-bb6a-596b36952f82",
+      "comment": "",
+      "command": "click",
+      "target": "name=inputPassword",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f640f1e-9b58-44d4-8b8b-d1ed27eddac9",
+      "comment": "",
+      "command": "type",
+      "target": "name=inputPassword",
+      "targets": [
+        ["name=inputPassword", "name"],
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='inputPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${loginUserPassword}"
+    }, {
+      "id": "fa2def23-e244-4f41-864a-5e06ddf6515f",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=inputEmail",
+      "targets": [],
+      "value": "${loginEmail}"
+    }, {
+      "id": "4d24d4f7-33be-4441-ba0f-f08e316d04ec",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=inputPassword",
+      "targets": [],
+      "value": "${loginUserPassword}"
+    }, {
+      "id": "a5a651ac-3081-4919-affc-8cb5008a52a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rounded-end-pill",
+      "targets": [
+        ["css=.rounded-end-pill", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1416e5bb-bd85-44b2-9419-7bf824969e57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b28611b6-8c91-428a-b16d-a1520eacbf54",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Yanis  Correa')]", "xpath:link"],
+        ["xpath=//div[@id='content']/nav/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/adminces/')])[4]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": "${usuarioLogueado}"
+    }, {
+      "id": "a75390ea-8fae-4f54-bef2-811f70162b90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-info",
+      "targets": [
+        ["css=.text-info", "css:finder"],
+        ["xpath=//a[@id='cardLogin']/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "701054aa-6bc7-4f96-9d22-d05fbd292213",
+      "comment": "",
+      "command": "click",
+      "target": "name=inputFirstName",
+      "targets": [
+        ["name=inputFirstName", "name"],
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='inputFirstName']", "xpath:attributes"],
+        ["xpath=//form[@id='formCreateUser']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79ed3f39-9709-494d-93b8-ef16bed55f9a",
+      "comment": "",
+      "command": "type",
+      "target": "name=inputFirstName",
+      "targets": [
+        ["name=inputFirstName", "name"],
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='inputFirstName']", "xpath:attributes"],
+        ["xpath=//form[@id='formCreateUser']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${firstName}"
+    }, {
+      "id": "bf96b546-5ae5-4a4f-9ef9-02d126cd5471",
+      "comment": "",
+      "command": "click",
+      "target": "name=inputLastName",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53a4e19c-7cda-4b1d-81d0-c128a8f28c65",
+      "comment": "",
+      "command": "type",
+      "target": "name=inputLastName",
+      "targets": [
+        ["name=inputLastName", "name"],
+        ["css=.form-group:nth-child(1) > .col-sm-6:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='inputLastName']", "xpath:attributes"],
+        ["xpath=//form[@id='formCreateUser']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${lastName}"
+    }, {
+      "id": "f5598319-4940-4918-a5d3-cc4150c6826d",
+      "comment": "",
+      "command": "click",
+      "target": "name=inputEmail",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "685ad3d9-f6ce-4405-b7f8-5c89a3b3a196",
+      "comment": "",
+      "command": "type",
+      "target": "name=inputEmail",
+      "targets": [
+        ["name=inputEmail", "name"],
+        ["css=.form-group > .form-control", "css:finder"],
+        ["xpath=//input[@name='inputEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='formCreateUser']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "${email}"
+    }, {
+      "id": "0d68d32f-256d-4410-9780-11151ff11914",
+      "comment": "",
+      "command": "click",
+      "target": "name=inputCountry",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6c24623-1db6-4a38-85a0-e034e2d96b06",
+      "comment": "",
+      "command": "select",
+      "target": "name=inputCountry",
+      "targets": [],
+      "value": "${country}"
+    }, {
+      "id": "24e95b9a-8824-4d59-8889-2933c5270c0a",
+      "comment": "",
+      "command": "click",
+      "target": "name=inputPassword",
+      "targets": [
+        ["name=inputPassword", "name"],
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='inputPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='formCreateUser']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18c22559-79fa-434b-aaac-163988b423d0",
+      "comment": "",
+      "command": "type",
+      "target": "name=inputPassword",
+      "targets": [
+        ["name=inputPassword", "name"],
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='inputPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='formCreateUser']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "${createAccountPassword}"
+    }, {
+      "id": "a690c836-35c6-4fb2-aede-405f931a2af1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(1) > .custom-control-label",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > .custom-control-label", "css:finder"],
+        ["xpath=//form[@id='formCreateUser']/div[4]/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Tester Junior')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94f73b31-af98-4d42-8606-30539eb27f54",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=inputFirstName",
+      "targets": [],
+      "value": "${firstName}"
+    }, {
+      "id": "cf6e9714-fcbf-47c2-bfed-8b013d15b050",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=inputLastName",
+      "targets": [],
+      "value": "${lastName}"
+    }, {
+      "id": "c4c77d7a-a01e-4f9c-8515-857eb87a89b9",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=inputEmail",
+      "targets": [],
+      "value": "${email}"
+    }, {
+      "id": "9804c456-78f0-40b6-bb4d-8dbdeb2a3768",
+      "comment": "",
+      "command": "verifySelectedLabel",
+      "target": "name=inputCountry",
+      "targets": [],
+      "value": "${country}"
+    }, {
+      "id": "b6d7ee34-8f9d-472f-a3e4-8fefa68060db",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=inputPassword",
+      "targets": [],
+      "value": "${createAccountPassword}"
+    }, {
+      "id": "385c2376-4c73-4f80-8a13-90fab874b242",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnRegister",
+      "targets": [
+        ["id=btnRegister", "id"],
+        ["css=#btnRegister", "css:finder"],
+        ["xpath=//button[@id='btnRegister']", "xpath:attributes"],
+        ["xpath=//form[@id='formCreateUser']/div[5]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86894209-a20b-41a3-95d0-3c955657e211",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6658cf3f-2edd-4f37-85c5-b132990664ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ver usuarios",
+      "targets": [
+        ["linkText=Ver usuarios", "linkText"],
+        ["css=div > .active", "css:finder"],
+        ["xpath=//div[@id='wrapper']/ul/li/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/adminces/view-users')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ver usuarios')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7930811-7be5-4e01-ad65-b9f30649d68a",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//td[contains(text(),'${email}')]",
+      "targets": [],
+      "value": "${email}"
+    }, {
+      "id": "e64cbb32-4598-403f-8693-359570c14f23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Yanis  Correa')]", "xpath:link"],
+        ["xpath=//div[@id='content']/nav/ul/li/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/adminces/view-users')])[2]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d7c099f-96db-4948-ad14-739b5858e910",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cerrar sesión",
+      "targets": [
+        ["linkText=Cerrar sesión", "linkText"],
+        ["css=li:nth-child(3) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Cerrar sesión')]", "xpath:link"],
+        ["xpath=//div[@id='content']/nav/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/adminces')])[7]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cerrar sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbefed47-1089-495e-9242-3e31ec6b14f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sí')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "496cbe98-2400-4528-8341-e481894c7754",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["825fbe23-ac29-4006-bdf5-37a44dc05f69"]
+  }],
+  "urls": ["http://cestore.ces.com.uy/adminces"],
+  "plugins": []
+}
